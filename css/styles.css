@@ -496,7 +496,7 @@ p {
 }
 
 .footer-soc-link:hover,
-.footer-soc-lonk {
+.footer-soc-link:focus {
   background-color: #31d0aa;
 }
 
