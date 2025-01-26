@@ -361,9 +361,10 @@ p {
 .portfolio-item {
   border: 1px solid #e7e9fc;
   width: calc((100% - 48px) / 3);
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.portfolio-item:hover .cover-text {
+.portfolio-item:hover .cover-wrap {
   transform: translateY(0);
   box-shadow: 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16),
     0px 2px 1px rgba(46, 47, 66, 0.08);
@@ -383,7 +384,6 @@ p {
 .cover-wrap {
   position: relative;
   overflow: hidden;
-  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .cover-text {
@@ -421,6 +421,15 @@ p {
 .footer {
   background-color: #2e2f42;
   padding: 100px 0;
+}
+
+.footer-container {
+  display: flex;
+  align-items: baseline;
+}
+
+.footer-logo-container {
+  margin-right: 120px;
 }
 
 .footer-logo {
@@ -468,6 +477,7 @@ p {
 
 .footer-soc-item {
 }
+
 .footer-soc-link {
   display: flex;
   gap: 24px;
@@ -477,6 +487,12 @@ p {
   border-radius: 50%;
   align-items: center;
   justify-content: center;
+  background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.footer-soc-link:hoover,
+.footer-soc-link:focus {
+  background-color: #31d0aa;
 }
 
 .footer-soc-icon {
